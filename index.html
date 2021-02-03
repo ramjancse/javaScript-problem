@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<title> javaScript Problem and Solution </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+       
+    </head>
+    <body>
+       <div class="container">
+            <h1 class="text-center"> Problem solving By javaScript </h1>
+
+            <div class="card bg-info text-white cardstyle" id="problem1">
+                <div class="card-body p-1">
+                    <h4 class="card-title"> 1. Write a javaScript code for showing current date, time and day </h4>
+                </div>
+            </div>
+            
+            <div class="bg-success text-white solutiondiv" id="card1">
+                var date =  new Date();<br>
+                var today = date.getDay();<br>
+                var currentTime = date.toLocaleTimeString();<br>
+                var currentDate = date.toLocaleDateString();<br><br>
+                
+                if(today === 0){<br>
+                    console.log("Today is : Sunday" + "Date: " + currentDate + " Time:" + currentTime);<br>
+                }else if(today === 1){<br>
+                   
+                    console.log("Today is : Monday" + "Date: " + currentDate + " Time:" + currentTime);<br>
+                }
+                else if(today === 2){<br>
+                    console.log("Today is : Tuesday " + "Date: " + currentDate + " Time:" + currentTime);<br>
+                }
+                else if(today === 3){<br>
+                    console.log("Today is : Wednesday " + "Date: " + currentDate + " Time:" + currentTime);<br>
+                }
+                else if(today === 4){<br>
+                    console.log("Today is : Thursday " + "Date: " + currentDate + " Time:" + currentTime);<br>
+                }
+                
+                else if(today === 5){<br>
+                    console.log("Today is : Friday " + "Date: " + currentDate + " Time:" + currentTime);<br>
+                }
+                
+                else{<br>
+                    console.log("Today is : Friday " + "Date: " + currentDate + " Time:" + currentTime);<br>
+                }
+                
+
+            </div>
+           
+            <button class="btn btn-primary" id="button1"> Click to show the solution </button>
+       </div>
+
+        
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+       <script src="script.js" ></script> 
+       <script src="main.js" ></script>   
+       
+    </body>
+</html>
