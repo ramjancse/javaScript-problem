@@ -53,12 +53,47 @@
                 else{<br>
                     console.log("Today is : Friday " + "Date: " + currentDate + " Time:" + currentTime);<br>
                 }
-                
-
+                <br><br>
+                Or Another option is <br>
+                var date =  new Date();<br>
+                var today = date.getDay();<br>
+                var currentDate = date.toLocaleDateString();<br>
+                var currentTime = date.toLocaleTimeString();<br>
+                var currentDtaeAndTime = date.toLocaleString('en-us', { day: 'numeric', year: 'numeric', month:'long', weekday: 'long',   hour:'numeric', minute:'numeric'})<br>
+                var card1view = document.getElementById('answerView1')<br>
+                card1view.innerText = "The answer is: " + currentDtaeAndTime;<br>
+                <div id="answerView1"> </div>
             </div>
+          
            
-            <button class="btn btn-primary" id="button1"> Click to show the solution </button>
+            <button class="btn btn-primary mt-2" id="button1"> Click to show the solution </button>
+
+
+            <div class="card bg-info text-white cardstyle mt-2" id="problem2">
+                <div class="card-body p-1">
+                    <h4 class="card-title"> 2. Write a javaScript function to get sum of two number; </h4>
+                </div>
+                </div>
+            
+            <div class="bg-success text-white solutiondiv" id="card2">
+               
+                var addTowNumbers= function(a,b){<br>
+                    return a+b;<br>
+                }<br>
+                const card1view2 = document.getElementById('answerView2');<br>
+                card1view2.innerText = addTowNumbers(10,20);<br>
+
+                <div id="answerView2"> </div>
+            </div>
+          
+           
+            <button class="btn btn-primary mt-2" id="button2"> Click to show the solution </button>
+        </div>
+
        </div>
+
+       
+       
 
         
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
