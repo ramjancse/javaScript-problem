@@ -43,3 +43,11 @@ var addTowNumbers= function(a,b){
 }
 const card1view2 = document.getElementById('answerView2');
 card1view2.innerText = "The result is: " + addTowNumbers(10,20);
+
+// 3. Return the Next Number from a passed the Integer number
+
+var nextNumber = function(a){
+    return a + 1 ;
+}
+const card1view3 = document.getElementById('answerView3');
+card1view3.innerText = "The result is: " + nextNumber(10);
